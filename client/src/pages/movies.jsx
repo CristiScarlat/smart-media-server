@@ -12,7 +12,7 @@ function MoviesPage() {
     },[]);
 
     return (
-        <div style={{ background: '#8080803b', padding: '0 1rem 0 1rem' }}>
+        <div className="general-container">
             <h1>Movies</h1>
             <h4>No. of items: {moviesContent.length}</h4>
             <div>

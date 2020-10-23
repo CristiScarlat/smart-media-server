@@ -1,12 +1,15 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import FaIcon from '../components/FaIcon/faIcon'
 
+//faExclamationTriangle
 function HomePage() {
 
     return (
-        <div>
-            <h1>Page Not Found</h1>
-            
+        <div className="general-container">
+            <div className="pageNotFound">
+                <FaIcon iconName='faExclamationTriangle' iconSize='3x' iconColor='yellow'/>
+                <div className="mt-2">Page Not Found</div>
+                </div>
         </div>
     )
 }
