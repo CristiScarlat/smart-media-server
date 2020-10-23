@@ -1,28 +1,24 @@
 import React from 'react';
 import { Nav } from "react-bootstrap";
 import { NavLink } from 'react-router-dom';
+import FaIcon from '../FaIcon/faIcon';
 import './sidebar.css'
 
-function Sidebar() {
+function Sidebar({ items }) {
     return (
         <>
             <Nav className="flex-column align-items-center sidebar"
                 activeKey="/home"
-                onSelect={selectedKey => alert(`selected ${selectedKey}`)}
+                //onSelect={selectedKey => alert(`selected ${selectedKey}`)}
             >
-                <div className="sidebar-sticky"></div>
-                <Nav.Item>
-                    <NavLink to="/">Home</NavLink>
+                {items?.map((item, index) => (
+                    <Nav.Item key={item + index} className="m-2">
+                    <NavLink to={item.linkTo}>
+                        <FaIcon {...item.icon}/>
+                        {item.name}
+                        </NavLink>
                 </Nav.Item>
-                <Nav.Item>
-                    <NavLink to="/movies">Movies</NavLink>
-                </Nav.Item>
-                <Nav.Item>
-                    <NavLink to="/pictures">Pictures</NavLink>
-                </Nav.Item>
-                <Nav.Item>
-                    <NavLink to="/music">Music</NavLink>
-                </Nav.Item>
+                ))}
             </Nav>
         </>
     )
