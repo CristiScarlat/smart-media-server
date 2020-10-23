@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav } from "react-bootstrap";
 import { NavLink } from 'react-router-dom';
-import FaIcon from '../FaIcon/faIcon';
+import FaIcon from '../faIcon/faIcon';
 import './sidebar.css'
 
 function Sidebar({ items }) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import FaIcon from '../components/FaIcon/faIcon'
+import FaIcon from '../components/faIcon/faIcon'
 
 //faExclamationTriangle
 function HomePage() {
