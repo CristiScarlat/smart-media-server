@@ -15,7 +15,7 @@ function MoviesPage() {
         <div className="general-container">
             <h1>Movies</h1>
             <h4>No. of items: {moviesContent.length}</h4>
-            <div>
+            <div className="movies-list-container">
                 {moviesContent.map((movie, index) => (
                     <div key={movie.file + index} style={{ display: 'flex', justifyContent: 'start', alignItems: 'center', margin: '0.2rem' }}>
                         {movie.isDirectory ? <FontAwesomeIcon icon={faFolder} size='lg' color='grey' /> : <FontAwesomeIcon icon={faFile} size='lg' color='grey' />}
