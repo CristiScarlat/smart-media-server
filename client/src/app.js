@@ -2,7 +2,7 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
 } from "react-router-dom";
 import HomePage from './pages/home';
 import MoviesPage from './pages/movies';
@@ -16,12 +16,12 @@ function App() {
         {linkTo: "/movies", icon: {iconName: 'faFilm', iconSize: '2x', iconColor: 'grey'}},
         {linkTo: "/pictures", icon: {iconName: 'faImage', iconSize: '2x', iconColor: 'grey'}},
         {linkTo: "/music", icon: {iconName: 'faMusic', iconSize: '2x', iconColor: 'grey'}}
-    ]
+    ];
 
     return (
         <>
             <Router>
-                <Sidebar items={sideBarItems}/>
+                <Sidebar items={sideBarItems} selectedItem={null}/>
                 <div className="main-app">
                     <Switch>
                         <Route exact path="/" component={HomePage} />

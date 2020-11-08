@@ -11,3 +11,17 @@
     width: 4rem; 
 }
 
+.sidebar-item {
+    opacity: 0.6;
+}
+
+.sidebar-item.selected{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.sidebar-item:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+

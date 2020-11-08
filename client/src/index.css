@@ -51,6 +51,15 @@ code {
   overflow-y: auto;
 }
 
+.movies-list-item{
+  cursor: pointer;
+}
+
+.movies-list-item:hover{
+  background: #1d2a3e;
+}
+
+
 .pageNotFound {
   display: flex;
   flex-direction: column;
