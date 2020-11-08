@@ -1,3 +1,4 @@
+WORK IN PROGRESS
 Smart_media-server is a media-server that should run on a PC or SBC, inside a local web on your home.  
 Main features are:  
   
