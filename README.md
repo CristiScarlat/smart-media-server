@@ -8,7 +8,7 @@ Main features are:
 5.User can upload images  
 6.User can upload pictures  
 7.Play from usb or card(should have a hdmi output)  
-8.MAYBE, stream from phone
+8.MAYBE, stream from phone  
 9.Serve data about the weather for current day and next  
 10.Serve data about indoor environment (read sensors using Raspberry pi or Arduino)  
 11.User can register other users and give permissions for accessing files (example restricted permissions for kids)  
