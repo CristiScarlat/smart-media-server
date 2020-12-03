@@ -53,6 +53,7 @@ code {
 
 .movies-list-item{
   cursor: pointer;
+  font-size: 56px;
 }
 
 .movies-list-item:hover{
